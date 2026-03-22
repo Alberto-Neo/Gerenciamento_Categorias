@@ -27,4 +27,8 @@ public class CategoriaService {
     public CategoriaModel criar(CategoriaModel categoriaModel){
         return categoriaRepository.save(categoriaModel);
     }
+
+    public void deletar(long id){
+        categoriaRepository.deleteById(id);
+    }
 }
